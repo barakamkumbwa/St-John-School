@@ -143,7 +143,7 @@ export function Navbar() {
             </nav>
 
             <div className="flex items-center gap-3">
-              <Button href="/portal/login" size="sm" variant="primary" className="hidden rounded-md bg-forest-600 text-white shadow-none hover:bg-forest-700 sm:inline-flex">Portal Login</Button>
+              <Button href="#" size="sm" variant="primary" className="hidden rounded-md bg-forest-600 text-white shadow-none hover:bg-forest-700 sm:inline-flex">Portal Login</Button>
               <button onClick={() => setIsOpen(!isOpen)} className="rounded-lg p-2 text-navy-800 hover:bg-navy-50 xl:hidden" aria-label={isOpen ? "Close menu" : "Open menu"} aria-expanded={isOpen}>
                 {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
               </button>
@@ -186,7 +186,7 @@ export function Navbar() {
                   <Link key={link.href} href={link.href} onClick={() => setIsOpen(false)} className="rounded-lg px-4 py-3 text-sm font-medium text-navy-700 transition-colors hover:bg-navy-50">{link.label}</Link>
                 ))}
                 <div className="grid grid-cols-2 gap-2 px-4">
-                  <Link href="/portal/login" onClick={() => setIsOpen(false)} className="rounded-lg bg-navy-50 px-3 py-2 text-sm font-medium text-navy-700">Portal Login</Link>
+                  <Link href="#" onClick={() => setIsOpen(false)} className="rounded-lg bg-navy-50 px-3 py-2 text-sm font-medium text-navy-700">Portal Login</Link>
                   <Link href="/admissions/fees" onClick={() => setIsOpen(false)} className="rounded-lg bg-navy-50 px-3 py-2 text-sm font-medium text-navy-700">School Fees</Link>
                 </div>
                 <div className="grid grid-cols-2 gap-2 px-4 pb-2">
